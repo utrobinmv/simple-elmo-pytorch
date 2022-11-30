@@ -14,13 +14,13 @@
 
 Установка
 
-```bahs
+```bash
 python setup.py install
 ```
 
 или
 
-```
+```bash
 pip install simple_elmo_pytorch
 ```
 
@@ -66,7 +66,7 @@ out = model(sentence_ids)
 - get_elmo_vectors(SENTENCES) - для получения эмбединга каждого слова
 - get_elmo_vector_average(SENTENCES)`- для получение эмбединга всей последовательности, как среднее всех слов
 
-```
+```python
 vk = ElmoVectorizer(model, batch_size = 2, device='cpu')
 
 text_str_1 = 'Привет моя строка как дела ура'
